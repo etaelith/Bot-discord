@@ -16,16 +16,16 @@ client.on('messageReactionAdd', (reaction, user) => {
     if (reaction.message.id === '780571065537396776') {
         switch (name) {
             case '🍎':
-                member.roles.add(process.env.RANK_TOTAL);
+                member.roles.add('780577710753841162');
                 break
             case '🎮':
-                member.roles.add(process.env.RANK_JUEGOS);
+                member.roles.add('780577362516377640');
                 break
             case '🤡':
-                member.roles.add(process.env.RANK_EDU);
+                member.roles.add('780577976802213909');
                 break
             case '💩':
-                member.roles.add(process.env.RANK_FEO);
+                member.roles.add('780330415071821835');
                 break
         }
     };
@@ -38,16 +38,16 @@ client.on('messageReactionRemove', (reaction, user) => {
     if (reaction.message.id === '780571065537396776') {
         switch (name) {
             case '🍎':
-                member.roles.remove(process.env.RANK_TOTAL);
+                member.roles.remove('780577710753841162');
                 break
             case '🎮':
-                member.roles.remove(process.env.RANK_JUEGOS);
+                member.roles.remove('780577362516377640');
                 break
             case '🤡':
-                member.roles.remove(process.env.RANK_EDU);
+                member.roles.remove('780577976802213909');
                 break
             case '💩':
-                member.roles.remove(process.env.RANK_FEO);
+                member.roles.remove('780330415071821835');
                 break
         }
     }
